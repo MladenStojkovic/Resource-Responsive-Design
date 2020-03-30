@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Resources Responsive Design UI</title>
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+		<script src="https://kit.fontawesome.com/a21e21d6d4.js" crossorigin="anonymous"></script>
+
+		<!-- Koristiti <section> -->
+		<!-- Ponavljanje koda za iste/slicne module -->
+		<!-- Napraviti default klase za color/font-size pa u html gruvati umesto u CSS-u -->
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<button type="button" name="button" class="sidebar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="logo-wrapper">
+					<a href="#"><img src="#" alt="LOGO"/></a>
+				</div>
+				<nav class="menu-tablet">
+					<ul>
+						<li class="active-menu-link"><a href="#">Home</a></li>
+						<li><a href="#">Discovery</a></li>
+						<li><a href="#">Photos</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="profile-picture-wrapper">
+					<a href="#"><img src="assets/avatar.png" alt="profile-picture"/></a>
+				</div>
+			</div>
+			<!--  container end -->
+		</header>
+
+		<aside class="mobile-overlay">
+			<div class="mobile-overlay-header">
+				<div class="logo-wrapper">
+					<a href="#"><img src="#" alt="LOGO"/></a>
+				</div>
+				<ul class="mobile-overlay-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Discovery</a></li>
+					<li><a href="#">Photos</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Profile</a></li>
+				</ul>
+			</div>
+			<!-- mobile-overlay-header end -->
+			<div class="mobile-overlay-footer">
+				<ul class="mobile-overlay-footer-wrapper">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Guidlines</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Advertise</a></li>
+					<li><a href="#">Intergrations</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+				<ul class="social-link-wrapper">
+					<li>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-globe-europe"></i></a>
+					</li>
+				</ul>
+			</div>
+			<!-- mobile-overlay-footer end-->
+		</aside>
+
+		<main>
+			<section class="jumbotron">
+				<div class="container">
+					<h2 class="jumbotron-main-title main-title">World News</h2>
+
+					<h2 class="jumbotron-subtitle">Amazing places in America to visit.</h2>
+					<p class="jumbotron-text">
+						For some reason — this country, this city, this neighborhood, this particular street —  is the place you are
+						living a majority of your life in.
+					</p>
+					<div class="btn-wrapper">
+						<a href="#" class="btn-primary">Learn More</a>
+					</div>
+				</div>
+				<!-- container end -->
+			</section>
+			<!--  jumbotron end -->
+			
+
+			<section class="more-news">
+				<div class="container">
+					<div class="swiper-container">
+						<div class="section-header">
+							<h2 class="main-title">More News</h2>
+							<div class="article-control-wrapper">
+								<div class="arrow-left swiper-button-prev"></div>
+								<div class="arrow-right swiper-button-next"></div>
+							</div>
+						</div>
+						<!-- section-header end -->
+
+						<div class="swiper-wrapper">
+							<div class="swiper-slide col-md-6">
+								<div class="article-wrapper">
+									<h2 class="article-main-title">Travel</h2>
+									<a href="#"><h3 class="article-subtitle">Article title</h3></a>
+									<p class="article-text">
+										Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+									</p>
+									<p class="article-timestamp">2m ago</p>
+								</div>
+
+								<div class="article-wrapper">
+									<h2 class="article-main-title">Technology</h2>
+									<a href="#"><h3 class="article-subtitle">Article title</h3></a>
+									<p class="article-text">
+										Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+									</p>
+									<p class="article-timestamp">2m ago</p>
+								</div>
+
+							</div>
+							<!-- swiper-slide end -->
+
+							<div class="swiper-slide col-md-6">
+								<div class="article-wrapper">
+									<h2 class="article-main-title">Travel</h2>
+									<a href="#"><h3 class="article-subtitle">Article title</h3></a>
+									<p class="article-text">
+										Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+									</p>
+									<p class="article-timestamp">2m ago</p>
+								</div>
+								<div class="article-wrapper">
+									<h2 class="article-main-title">Technology</h2>
+									<a href="#"><h3 class="article-subtitle">Article title</h3></a>
+									<p class="article-text">
+										Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+									</p>
+									<p class="article-timestamp">2m ago</p>
+								</div>
+							</div>
+							<!-- swiper-slide end -->
+						</div>
+						<!-- swiper-wrapper end -->
+					</div>
+					<!-- swiper-container end -->
+				</div>
+				<!-- container end -->
+			</section>
+			<!-- more-news end -->
+		</main>
+		<!-- main end -->
+
+			<section class="trending">
+				<div class="container">
+					<div class="swiper-container">
+						<div class="section-header">
+							<h2 class="main-title">Trending</h2>
+							<div class="article-control-wrapper">
+								<div class="arrow-left swiper-button-prev"></div>
+								<div class="arrow-right swiper-button-next"></div>
+							</div>
+						</div>
+						<!-- section-header end -->
+
+						<div class="swiper-wrapper">
+							<div class="swiper-slide col-md-6">
+								<div class="article-wrapper">
+									<div class="article-img-wrapper">
+										<img src="images/trending-1.png" alt="" />
+									</div>
+									<div class="article-text-wrapper">
+										<h3 class="article-title">Morbi eleifend a libero</h3>
+										<p class="article-text">
+											Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+										</p>
+										<p class="article-timestamp">2m ago</p>
+									</div>
+								</div>
+
+								<div class="article-wrapper">
+									<div class="article-img-wrapper">
+										<img src="images/trending-2.png" alt="" />
+									</div>
+									<div class="article-text-wrapper">
+										<h3 class="article-title">Dolore magna aliqua</h3>
+										<p class="article-text">
+											Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+										</p>
+										<p class="article-timestamp">2m ago</p>
+									</div>
+								</div>
+
+								<div class="article-wrapper">
+									<div class="article-img-wrapper">
+										<img src="images/trending-1.png" alt="" />
+									</div>
+									<div class="article-text-wrapper">
+										<h3 class="article-title">Morbi eleifend a libero</h3>
+										<p class="article-text">
+											Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+										</p>
+										<p class="article-timestamp">2m ago</p>
+									</div>
+								</div>
+
+							</div>
+							<!-- swiper-slide end -->
+
+							<div class="swiper-slide col-md-6">
+								<div class="article-wrapper">
+									<div class="article-img-wrapper">
+										<img src="images/trending-2.png" alt="" />
+									</div>
+									<div class="article-text-wrapper">
+										<h3 class="article-title">Morbi eleifend a libero</h3>
+										<p class="article-text">
+											Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+										</p>
+										<p class="article-timestamp">2m ago</p>
+									</div>
+								</div>
+
+								<div class="article-wrapper">
+									<div class="article-img-wrapper">
+										<img src="images/trending-1.png" alt="" />
+									</div>
+									<div class="article-text-wrapper">
+										<h3 class="article-title">Morbi eleifend a libero</h3>
+										<p class="article-text">
+											Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+										</p>
+										<p class="article-timestamp">2m ago</p>
+									</div>
+								</div>
+
+								<div class="article-wrapper">
+									<div class="article-img-wrapper">
+										<img src="images/trending-1.png" alt="" />
+									</div>
+									<div class="article-text-wrapper">
+										<h3 class="article-title">Morbi eleifend a libero</h3>
+										<p class="article-text">
+											Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+										</p>
+										<p class="article-timestamp">2m ago</p>
+									</div>
+								</div>
+
+							</div>
+							<!-- swiper-slide end -->
+						</div>
+						<!-- swiper-wrapper end -->
+					</div>
+					<!-- swiper-container end -->
+				</div>
+				<!-- container end -->
+			</section>
+			<!-- section end -->
+
+			<section class="happening-now">
+				<div class="container">
+					<div class="swiper-container">
+						<div class="section-header">
+							<h2 class="main-title">Happening Now</h2>
+							<div class="article-control-wrapper">
+								<div class="arrow-left swiper-button-prev"></div>
+								<div class="arrow-right swiper-button-next"></div>
+							</div>
+						</div>
+						<!-- section-header end -->
+
+						<div class="swiper-wrapper">
+							<div class="swiper-slide flex-desktop">
+								<div class="happening-now-left col-lg-8">
+									<div class="article-wrapper">
+										<h2 class="article-main-title">City</h2>
+										<a href="#"><h3 class="article-subtitle">Large article title mobile<span class="desktop-text">layout</span></h3></a>
+										<p class="article-text">
+											Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit<span class="desktop-text">voluptatum vis eu, inermis eloquentiam.</span>
+										</p>
+										<p class="article-timestamp">2m ago</p>
+									</div>
+									<!-- article-wrapper end -->
+
+									<div class="article-wrapper">
+										<h2 class="article-main-title">Travel</h2>
+										<a href="#"><h3 class="article-subtitle">Large article title mobile<span class="desktop-text">layout</span></h3></a>
+										<p class="article-text">
+											Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit<span class="desktop-text">voluptatum vis eu, inermis eloquentiam.</span>
+										</p>
+										<p class="article-timestamp">2m ago</p>
+									</div>
+									<!-- article-wrapper end -->
+								</div>
+								<!-- happening-now-left end -->
+
+								<div class="happening-now-right col-md-6 col-lg-4">
+									<div class="article-wrapper">
+										<div class="article-img-wrapper">
+											<img src="images/sm-1.png" alt="">
+										</div>
+										<a href="#"><h3 class="article-subtitle">Small title</h3></a>
+										<p class="article-timestamp">2m ago by&nbsp;<a href="#">Worldnews</a></p>
+									</div>
+									<!-- article-wrapper end -->
+									<div class="article-wrapper">
+										<div class="article-img-wrapper">
+											<img src="images/sm-1.png" alt="">
+										</div>
+										<a href="#"><h3 class="article-subtitle">Small title</h3></a>
+										<p class="article-timestamp">2m ago by&nbsp;<a href="#">Days</a></p>
+									</div>
+									<!-- article-wrapper end -->
+									<div class="article-wrapper">
+										<div class="article-img-wrapper">
+											<img src="images/sm-1.png" alt="">
+										</div>
+										<a href="#"><h3 class="article-subtitle">Small title</h3></a>
+										<p class="article-timestamp">2m ago by&nbsp;<a href="#">Monica</a></p>
+									</div>
+									<!-- article-wrapper end -->
+								</div>
+								<!-- happening-now-right end -->
+							</div>
+							<!-- swiper-slide end -->
+
+							<div class="swiper-slide flex-desktop">
+								<div class="happening-now-left col-lg-8">
+									<div class="article-wrapper">
+										<h2 class="article-main-title">City</h2>
+										<a href="#"><h3 class="article-subtitle">Large article title mobile<span class="desktop-text">layout</span></h3></a>
+										<p class="article-text">
+											Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit<span class="desktop-text">voluptatum vis eu, inermis eloquentiam.</span>
+										</p>
+										<p class="article-timestamp">2m ago</p>
+									</div>
+									<!-- article-wrapper end -->
+
+									<div class="article-wrapper">
+										<h2 class="article-main-title">Travel</h2>
+										<a href="#"><h3 class="article-subtitle">Large article title mobile<span class="desktop-text">layout</span></h3></a>
+										<p class="article-text">
+											Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit<span class="desktop-text">voluptatum vis eu, inermis eloquentiam.</span>
+										</p>
+										<p class="article-timestamp">2m ago</p>
+									</div>
+									<!-- article-wrapper end -->
+								</div>
+								<!-- happening-now-left end -->
+
+								<div class="happening-now-right col-md-6 col-lg-4">
+									<div class="article-wrapper">
+										<div class="article-img-wrapper">
+											<img src="images/sm-1.png" alt="">
+										</div>
+										<a href="#"><h3 class="article-subtitle">Small title</h3></a>
+										<p class="article-timestamp">2m ago by<a href="#">Worldnews</a></p>
+									</div>
+									<!-- article-wrapper end -->
+									<div class="article-wrapper">
+										<div class="article-img-wrapper">
+											<img src="images/sm-1.png" alt="">
+										</div>
+										<a href="#"><h3 class="article-subtitle">Small title</h3></a>
+										<p class="article-timestamp">2m ago by<a href="#">Days</a></p>
+									</div>
+									<!-- article-wrapper end -->
+									<div class="article-wrapper">
+										<div class="article-img-wrapper">
+											<img src="images/sm-1.png" alt="">
+										</div>
+										<a href="#"><h3 class="article-subtitle">Small title</h3></a>
+										<p class="article-timestamp">2m ago by<a href="#">Monica</a></p>
+									</div>
+									<!-- article-wrapper end -->
+								</div>
+								<!-- happening-now-right end -->
+							</div>
+							<!-- swiper-slide end -->
+						</div>
+						<!-- swiper-wrapper end -->
+					</div>
+					<!-- swiper-container end -->
+				</div>
+				<!-- container end -->
+			</section>
+			<!-- happening-now end -->
+
+			<footer>
+				<div class="container">
+					<div class="footer-logo-wrapper">
+						<img src="#" alt="LOGO">
+					</div>
+					<ul class="footer-menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Discovery</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Advertise</a></li>
+						<li><a href="#">Photos</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Integrations</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Guidlines</a></li>
+						<li><a href="#">Careers</a></li>
+					</ul>
+					<div class="input-wrapper">
+						<input type="text" placeholder="Email">
+						<p>Stay in touch with us for the freshest products!</p>
+					</div>
+					<ul class="footer-social-links">
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fas fa-globe-americas"></i></a></li>
+					</ul>
+				</div>
+			</footer>
+
+
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.js"
+			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+		<script>
+			var mySwiper = new Swiper(".swiper-container", {
+				// Optional parameters
+				loop: false,
+
+				// If we need pagination
+				pagination: {
+					el: ".swiper-pagination"
+				},
+
+				// Navigation arrows
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev"
+				}
+
+				// And if we need scrollbar
+			});
+		</script>
+	</body>
+</html>
