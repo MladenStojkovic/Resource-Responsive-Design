@@ -624,12 +624,16 @@ footer .input-wrapper p {
   }
 
   footer .container .footer-menu {
-    flex-basis: calc(100%/3);
     justify-content: flex-start;
+    margin-left: 30px;
   }
 
   footer .container .footer-menu li {
-    flex-basis: 100px;
+    
+  }
+
+  footer .container .footer-menu li:nth-child(3n+3) {
+    flex: 1;
   }
 
   footer .input-wrapper {
