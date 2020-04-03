@@ -42,17 +42,32 @@
 			<!--  container end -->
 		</header>
 
-		<aside class="mobile-overlay">
+		<aside class="mobile-overlay collapsed">
 			<div class="mobile-overlay-header">
 				<div class="logo-wrapper">
-					<a href="#"><img src="#" alt="LOGO"/></a>
+					<a href="#"><img src="assets/logo.svg" alt="LOGO"/></a>
 				</div>
 				<ul class="mobile-overlay-nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Discovery</a></li>
-					<li><a href="#">Photos</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Profile</a></li>
+					<li>
+						<img src="assets/home.svg" alt="">
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<img src="assets/discover.svg" alt="">
+						<a href="#">Discovery</a>
+					</li>
+					<li>
+						<img src="assets/photos.svg" alt="">
+						<a href="#">Photos</a>
+					</li>
+					<li>
+						<img src="assets/mail.svg" alt="">
+						<a href="#">Contact</a>
+					</li>
+					<li class="mobile-overlay-profile">
+						<img src="assets/avatar.png" alt="">
+						<a href="#">Profile</a>
+					</li>
 				</ul>
 			</div>
 			<!-- mobile-overlay-header end -->
@@ -466,6 +481,12 @@
 
 				// And if we need scrollbar
 			});
+		</script>
+
+		<script>
+			$(".sidebar-collapse").click(function() {
+				$(".mobile-overlay").toggleClass("collapsed");
+			})
 		</script>
 	</body>
 </html>
