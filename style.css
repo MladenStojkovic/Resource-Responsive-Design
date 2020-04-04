@@ -648,7 +648,15 @@ footer .input-wrapper p {
 
   main .jumbotron {
     width: 60%;
+    display: flex;
+    align-items: center;
+    padding-top: 185px 0 175px 0;
   }
+
+  .jumbotron .btn-primary {
+    margin-bottom: 0;
+  }
+  
 
   main .jumbotron .container {
     width: 70%;
@@ -671,7 +679,7 @@ footer .input-wrapper p {
   }
 
   main .jumbotron .main-title {
-    padding: 175px 0 40px 0;
+    padding: 0 0 40px 0;
   }
 
   .trending .article-wrapper:nth-child(n+3) {
