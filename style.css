@@ -116,7 +116,13 @@ header {
   width: 287px;
   background-color: #BDBFC0;
   z-index: 2;
-  height: 100%;
+  height: 100vh;
+  text-transform: uppercase;
+  overflow: auto;
+}
+
+.mobile-overlay-nav, .mobile-overlay-footer-wrapper {
+  font-size: 11px;
 }
 
 .collapsed {

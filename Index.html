@@ -484,9 +484,19 @@
 		</script>
 
 		<script>
-			$(".sidebar-collapse").click(function() {
-				$(".mobile-overlay").toggleClass("collapsed");
-			})
+			$(".sidebar-collapse").click(function(e) {
+				$(".mobile-overlay").toggleClass('collapsed');
+			});
+
+			
+			$(document).mouseup(function(e){
+   			var menu = $('.mobile-overlay');
+   			if (!menu.is(e.target) // The target of the click isn't the container.
+   			&& menu.has(e.target).length === 0) // Nor a child element of the container
+   			{
+     			 $(".mobile-overlay").addClass("collapsed");
+   			}
+			});
 		</script>
 	</body>
 </html>
