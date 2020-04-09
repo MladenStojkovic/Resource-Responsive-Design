@@ -2,6 +2,11 @@
 
 /* fonts */
 
+@font-face {
+	font-family: 'Helvetica';
+	src: url('fonts/Helvetica\ 400.ttf');
+}
+
 h1,
 h2,
 h3,
@@ -9,7 +14,7 @@ h4,
 h5,
 h6 {
 	font-weight: 700;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	margin: 0;
 }
 
@@ -18,7 +23,9 @@ h3 {
 }
 
 p {
+	font-size: 13px;
 	line-height: 26px;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 a,
@@ -26,36 +33,45 @@ a:link,
 a:active {
 	text-decoration: none;
 	color: inherit;
+	font-family: Helvetica, Arial, sans-serif;
+	outline: none;
 }
 
 /* global */
 
+.body-noscroll {
+	overflow: hidden;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+	right: -10px;
+	font-weight: 700;
+	font-size: 10px
+}
+
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-	right: 50px !important;
-	left: auto !important;
+	right: 30px;
+	left: auto;
+	font-weight: 700;
+	font-size: 10px
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-	color: #000000 !important;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-	font-size: 15px !important;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	color: #000000;
+	font-size: 10px;
 }
 
 .container {
-	width: 90%;
-	margin: 0 auto;
+	padding: 0 24px;
 }
 
 .btn-primary {
 	padding: 15px 40px;
 	background-color: #fa6980;
 	color: #ffffff;
-	border-radius: 10px;
+	border-radius: 6px;
 	display: inline-block;
 	font-size: 11px;
 	font-weight: 700;
@@ -106,6 +122,8 @@ a:active {
 .mobile-overlay-nav,
 .mobile-overlay-footer-wrapper {
 	font-size: 11px;
+	font-weight: 700;
+	color: #959798;
 }
 
 .collapsed {
@@ -151,6 +169,12 @@ a:active {
 .mobile-overlay-nav li a {
 	line-height: 15px;
 }
+
+.menu-tablet ul .active-menu-link,
+.mobile-overlay-nav .active-menu-link {
+	color: #202124;
+}
+
 
 .mobile-overlay-footer {
 	background-color: #bdbfc0;
@@ -224,6 +248,8 @@ a:active {
 }
 
 header .container {
+	width: 100%;
+	padding: 0 16px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -258,6 +284,13 @@ header .container {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 30px;
+}
+
+.jumbotron .jumbotron-text {
+	font-size: 16px;
 }
 
 .jumbotron .jumbotron-main-title::after {
@@ -273,7 +306,7 @@ header .container {
 }
 
 .jumbotron .btn-primary {
-	margin: 35px 0 55px 0;
+	margin: 20px 0 40px 0;
 }
 
 /* more news */
@@ -314,6 +347,13 @@ header .container {
 	align-items: center;
 	position: relative;
 	padding-left: 26px;
+	font-size: 13px;
+	line-height: 13px;
+	color: #a6adb4;
+}
+
+.article-timestamp a {
+	text-decoration: underline;
 }
 
 .article-timestamp:before {
@@ -326,14 +366,7 @@ header .container {
 	height: 16px;
 }
 
-.article-timestamp a {
-	text-decoration: underline;
-}
 
-.article-timestamp {
-	font-style: oblique;
-	color: #a6adb4;
-}
 
 /* trending */
 
@@ -355,9 +388,8 @@ header .container {
 }
 
 .trending .article-text-wrapper {
-	width: 90%;
 	margin: 0 auto;
-	padding: 33px 0;
+	padding: 33px 24px;
 }
 
 .trending .article-title {
@@ -371,7 +403,7 @@ header .container {
 }
 
 .happening-now-left .article-wrapper {
-	padding: 35px 20px;
+	padding: 35px 24px;
 	border-radius: 5px;
 }
 
@@ -387,6 +419,10 @@ header .container {
 
 .happening-now-left .article-subtitle {
 	margin: 60px 0 50px 0;
+}
+
+.happening-now-left .article-text {
+	font-size: 16px;
 }
 
 .happening-now-left .article-wrapper:nth-child(odd) {
@@ -522,11 +558,11 @@ footer .input-wrapper p {
 
 @media screen and (min-width: 768px) {
 	.container {
-		width: 80%;
+		padding: 0 80px;
 	}
 
 	header .container {
-		width: 95%;
+		padding: 0 20px;
 	}
 
 	.logo-wrapper {
@@ -553,10 +589,6 @@ footer .input-wrapper p {
 		color: #707070;
 		font-weight: 700;
 		text-transform: uppercase;
-	}
-
-	.menu-tablet ul .active-menu-link {
-		color: #202124;
 	}
 
 	.logo-wrapper {
@@ -604,6 +636,7 @@ footer .input-wrapper p {
 
 	.jumbotron .jumbotron-subtitle {
 		font-size: 24px;
+		margin-bottom: 10px;
 	}
 
 	.jumbotron .jumbotron-text {
@@ -617,6 +650,10 @@ footer .input-wrapper p {
 
 	.col-custom-md-6 > div {
 		width: 45%;
+	}
+
+	.trending .article-text-wrapper {
+		padding: 33px 40px;
 	}
 
 	.happening-now-left .article-subtitle {
@@ -653,6 +690,11 @@ footer .input-wrapper p {
 }
 
 @media screen and (min-width: 1440px) {
+
+	.container {
+		padding: 0 140px;
+	}
+
 	.hero {
 		display: flex;
 		flex-wrap: nowrap;
@@ -670,16 +712,12 @@ footer .input-wrapper p {
 	}
 
 	.hero .jumbotron .container {
-		width: 65%;
+		width: 100%;
 	}
 
 	.hero .more-news {
 		width: 40%;
-		padding: 50px 0;
-	}
-
-	.hero .more-news .container {
-		width: 60%;
+		padding: 100px 0;
 	}
 
 	.hero .more-news .col-custom-md-6 {
@@ -700,6 +738,11 @@ footer .input-wrapper p {
 
 	.trending .article-wrapper {
 		width: 30%;
+		margin-bottom: 0px;
+	}
+
+	.happening-now {
+		padding-bottom: 60px;
 	}
 
 	.happening-now-left {
@@ -715,7 +758,7 @@ footer .input-wrapper p {
 	.happening-now-right .article-wrapper:nth-child(3) {
 		display: block;
 	}
-
+	
 	.flex-desktop {
 		display: flex;
 		justify-content: space-between;
@@ -726,14 +769,14 @@ footer .input-wrapper p {
 	}
 
 	.col-custom-lg-4 {
-		width: 33%;
+		width: 30%;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: flex-start;
 	}
 
 	.col-custom-lg-4 > div {
-		width: 90%;
+		width: 100%;
 		margin-left: auto;
 	}
 
@@ -751,8 +794,8 @@ footer .input-wrapper p {
 
 	footer .container .footer-menu {
 		justify-content: flex-start;
-		margin-left: 30px;
-		margin-right: 220px;
+		margin-left: 60px;
+		margin-right: 170px;
 	}
 
 	footer .container .footer-menu li {
@@ -781,4 +824,33 @@ footer .input-wrapper p {
 	footer .container > ul {
 		flex-basis: initial;
 	}
+}
+
+@media screen and (min-width: 1800px) {
+
+	.container {
+		padding: 0 320px;
+	}
+
+	.hero .jumbotron {
+		width: 70%;
+	}
+
+	.hero .jumbotron .container {
+		padding: 0 240px 0 320px;
+	}
+
+	.more-news {
+		width: 30%;
+	}
+
+	.more-news .container {
+		padding: 0 100px;
+	}
+
+	.hero .more-news .col-custom-md-6 > div {
+		width: 100%;
+	}
+
+	
 }

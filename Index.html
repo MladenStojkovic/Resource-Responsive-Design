@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Resources Responsive Design UI</title>
 		<link rel="stylesheet" type="text/css" href="reset.css" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 		<script src="https://kit.fontawesome.com/a21e21d6d4.js" crossorigin="anonymous"></script>
 
 		<!-- Koristiti <section> -->
@@ -22,7 +22,7 @@
 							<a href="#"><img src="assets/logo.svg" alt="LOGO" /></a>
 						</div>
 						<ul class="mobile-overlay-nav">
-							<li>
+							<li class="active-menu-link">
 								<img src="assets/home.svg" alt="" />
 								<a href="index.html">Home</a>
 							</li>
@@ -109,7 +109,7 @@
 					<div class="container">
 						<h2 class="jumbotron-main-title main-title">World News</h2>
 
-						<h2 class="jumbotron-subtitle">Amazing places in America to visit.</h2>
+						<h2 class="jumbotron-subtitle">Amazing places in America<span class="desktop-text"> to visit.</span></h2>
 						<p class="jumbotron-text">
 							For some reason — this country, this city, this neighborhood, this particular street —  is the place you are
 							living a majority of your life in.
@@ -515,6 +515,7 @@
 		<script>
 			$(".sidebar-collapse").click(function (e) {
 				$(".mobile-overlay").toggleClass("collapsed");
+				$("body").toggleClass("body-noscroll");
 			});
 
 			$(document).mouseup(function (e) {
@@ -525,6 +526,7 @@
 				) {
 					// Nor a child element of the container
 					$(".mobile-overlay").addClass("collapsed");
+					$("body").removeClass("body-noscroll");
 				}
 			});
 		</script>
